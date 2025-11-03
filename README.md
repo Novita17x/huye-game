@@ -4,6 +4,7 @@
 
 Este proyecto fue creado con el objetivo de practicar lógica de videojuegos, detección de colisiones, animación y control de eventos con JavaScript puro.
 
+Demo online: https://huye.netlify.app/
 
 ## Gameplay
 
