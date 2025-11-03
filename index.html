@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡HUYE!</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        
+        <div id="mainMenu" class="menu">
+            <h1>¡HUYE!</h1>
+            <h2 class="nombre">Guerrero Torres Jhefferson</h2>
+            <button class="btn btn-inicio" onclick="startGame()">JUGAR</button>
+        </div>
+        
+        <div id="gameOverMenu" class="menu game-over hidden">
+            <h1>GAME OVER</h1>
+            <p>¡El enemigo te ha atrapado!</p>
+            <p id="survivalTime">Tiempo sobrevivido: 0s</p>
+            <div>
+                <button class="btn" onclick="startGame()">VOLVER A JUGAR</button>
+                <button class="btn secondary" onclick="showMainMenu()">MENÚ PRINCIPAL</button>
+            </div>
+        </div>
+        
+        <div id="controls" class="controls hidden">
+            <strong>Controles:</strong><br>
+            WASD/Flechas: Mover | ESPACIO: Saltar | R: Reiniciar
+        </div>
+        
+        <div id="gameInfo" class="info hidden">
+            <div id="infoText">Distancia: 0px | Tiempo: 0s</div>
+        </div>
+        
+        <div id="dangerIndicator" class="danger-indicator hidden">
+            ¡PELIGRO!
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
